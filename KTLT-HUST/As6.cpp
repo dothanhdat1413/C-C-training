@@ -1,3 +1,11 @@
+/**
+ * @file As6.cpp
+ * @author Do Thanh Dat ( @dothanhdat1413 )
+ * @version 0.1
+ * @date 2024-04-07
+ * @copyright Copyright (c) 2024
+ */
+ 
 #include <iostream>
 
 void cap_Phat_Mangdong2chieu(int**&p, int& n1, int& n2);
