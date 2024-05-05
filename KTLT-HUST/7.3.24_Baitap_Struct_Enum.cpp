@@ -46,7 +46,7 @@ int main(){
 	SinhVien* lop_sv_p=lop_sv;	
 	for(i=0;i<n;i++)	// tham chieu
 		{
-			output_Infor(*(lop_sv_p);
+			output_Infor(*(lop_sv_p));
 			lop_sv_p+=1;
 		}
 }
