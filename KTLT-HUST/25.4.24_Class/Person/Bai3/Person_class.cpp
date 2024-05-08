@@ -2,11 +2,6 @@
 #include <string>
 
 #include "main.h"
-        void push_ten(std::string& out_ten);
-        void push_ngaysinh(date& out_ngaysinh);
-        void push_que(std::string& out_que);
-
-
 void Person::set_ten(){
 	std::cin.ignore();
 	std::cout<< "\nNhap ho & ten: ";

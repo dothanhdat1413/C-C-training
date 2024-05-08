@@ -6,7 +6,7 @@ void so_phuc::in_z(){
         std::cin >> Re >> Im;
 }
 
-void so_phuc::set_z(float set_im, float set_re ){
+void so_phuc::set_z(float set_re, float set_im ){
         Im=set_im;
         Re=set_re;
 }

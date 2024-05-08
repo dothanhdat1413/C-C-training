@@ -1,3 +1,4 @@
+#include <iostream>
 typedef struct{
 	float x,y;
 }Decard_struct;
