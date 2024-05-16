@@ -10,8 +10,12 @@ class so_phuc{
     private:
         float Re,Im;
     public: 
-        void set_z(float, float);
-        void in_z();
+        /**
+         * @brief Set sẵn z từ thông số có trước
+         * @param float phan thuc, phan ao
+         */
+        void set_z(float, float);// ham set
+        void in_z();//ham nhap so phuc
         void print_z();
         
         float get_im();

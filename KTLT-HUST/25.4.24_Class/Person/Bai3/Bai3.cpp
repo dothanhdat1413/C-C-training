@@ -1,12 +1,58 @@
+
 #include <iostream>
 #include <string>
 
-#include "main.h"
+class date{
+	public:
+		int ngay;
+		int thang;
+		int nam;
+};
+class Person{
+	private:
+		char ten[50];
+		date ngaysinh;
+		char que[100];
+	public:
+		void set_ten();
+		void set_ngaysinh();
+		void set_que();
+		
+		std::string get_ten();
+		date get_ngaysinh();
+		std::string get_que();
 
+        void push_ten(std::string& out_ten);
+        void push_ngaysinh(date& out_ngaysinh);
+        void push_que(std::string& out_que);
+		
+		void nhap_thongtin();
+		void xuat_thongtin();
+};
+
+int main(){
+    
+    Person person1;
+    person1.nhap_thongtin();
+    person1.xuat_thongtin();
+    
+    std::string ten_nguoi; 
+    person1.push_ten(ten_nguoi);
+    std::cout<<'\n'<<"Ho va ten: "<<ten_nguoi;
+
+    std::string que_nguoi;
+    person1.push_que(que_nguoi);
+    std::cout<<'\n'<<"Que quan: "<<que_nguoi;
+
+    date ngaysinh_nguoi;
+    person1.push_ngaysinh(ngaysinh_nguoi);
+    std::cout <<'\n'<<"Ngay sinh: "<< ngaysinh_nguoi.ngay <<' '<< ngaysinh_nguoi.thang <<' '<< ngaysinh_nguoi.nam;
+
+}
 void Person::set_ten(){
 	std::cin.ignore();
 	std::cout<< "\nNhap ho & ten: ";
-	std::getline(std::cin,ten);
+	std::cin.getline(ten,50);
 }
 
 void Person::set_ngaysinh(){
@@ -18,7 +64,7 @@ void Person::set_ngaysinh(){
 void Person::set_que(){
 	std::cin.ignore();
 	std::cout<<"\nNhap que quan: ";
-	std::getline(std::cin,que);
+	std::cin.getline(que,100);
 }
 
 void Person::nhap_thongtin(){
