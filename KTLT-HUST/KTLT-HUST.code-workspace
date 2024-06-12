@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../Desktop/Test"
+		},
+		{
+			"path": "../../Khóa_C"
+		},
+		{
+			"path": "../../KTLTproject"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ostream": "cpp",
+			"iosfwd": "cpp"
+		}
+	}
+}

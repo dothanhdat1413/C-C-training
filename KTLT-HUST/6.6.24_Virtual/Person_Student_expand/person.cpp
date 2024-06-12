@@ -36,7 +36,7 @@ void Person::set_gender(string gender_){
     gender = gender_;
 }
 
-void Person::display(){
+ void Person::display(){
     cout <<"Person:\n"<<"Name:\t"<< name <<endl <<"Age:\t"<< age << endl<<"Gender:\t"<< gender << endl;
 }
 bool Person:: operator >(const Person& p){

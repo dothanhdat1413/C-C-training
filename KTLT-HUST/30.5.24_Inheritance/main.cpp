@@ -15,5 +15,9 @@ int main(){
     if(student1 > person1) cout<<student1.get_name()<<" gia hon "<<person1.get_name();
     else cout<<student1.get_name()<<" khong gia hon "<<person1.get_name();
 
+    Person person3(person1);
+
+    person3.display();
+
     return 0;
 }

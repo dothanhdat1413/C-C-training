@@ -20,7 +20,8 @@ class Person
         void set_age(int);
         string get_gender();
         void set_gender(string);
-        void display();
+        
+        virtual void display();
         void input();
         bool operator >(const Person&);
         istream& operator >> (istream&);
