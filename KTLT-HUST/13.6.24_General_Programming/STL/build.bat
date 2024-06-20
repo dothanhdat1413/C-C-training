@@ -1,0 +1,1 @@
+g++ vector.cpp -o vector.exe

@@ -1,0 +1,1 @@
+g++ Array.cpp -o Array.exe
